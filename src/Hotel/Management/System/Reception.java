@@ -23,7 +23,7 @@ public class Reception extends JFrame {
         Image i22 = i111.getImage().getScaledInstance(600,600, Image.SCALE_DEFAULT);
         ImageIcon imageIcon111 = new ImageIcon(i22);
         JLabel label11 = new JLabel(imageIcon111);
-        label11.setBounds(280,10,800,800);
+        label11.setBounds(280,10,800,715);
         panel.add(label11);
 
         ImageIcon i11 = new ImageIcon(ClassLoader.getSystemResource("icon/logo.gif"));
@@ -90,7 +90,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
+                    new Employee();
                 }catch (Exception E){
                     E.printStackTrace();
                 }
