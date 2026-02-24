@@ -187,7 +187,6 @@ public class AddEmployee extends JFrame implements ActionListener {
                 E.printStackTrace();
             }
 
-
         }else{
             setVisible(false);
         }
