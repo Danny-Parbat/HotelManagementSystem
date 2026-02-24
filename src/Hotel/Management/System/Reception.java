@@ -9,21 +9,21 @@ public class Reception extends JFrame {
     Reception(){
         JPanel panel = new JPanel();
         panel.setLayout(null);
-        panel.setBounds(280,5,1238,820);
+        panel.setBounds(280,5,1238,830);
         panel.setBackground(new Color(3,45,48));
         add(panel);
 
         JPanel panel1 = new JPanel();
         panel1.setLayout(null);
-        panel1.setBounds(5,5,270,820);
+        panel1.setBounds(5,5,270,830);
         panel1.setBackground(new Color(3,45,48));
         add(panel1);
 
         ImageIcon i111 = new ImageIcon(ClassLoader.getSystemResource("icon/hotell.gif"));
-        Image i22 = i111.getImage().getScaledInstance(600,600, Image.SCALE_DEFAULT);
+        Image i22 = i111.getImage().getScaledInstance(600,520, Image.SCALE_DEFAULT);
         ImageIcon imageIcon111 = new ImageIcon(i22);
         JLabel label11 = new JLabel(imageIcon111);
-        label11.setBounds(280,10,800,715);
+        label11.setBounds(280,10,750,730);
         panel.add(label11);
 
         ImageIcon i11 = new ImageIcon(ClassLoader.getSystemResource("icon/logo.gif"));
@@ -138,7 +138,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
+                    new CheckOut();
                 }catch (Exception E){
                     E.printStackTrace();
                 }
@@ -170,23 +170,7 @@ public class Reception extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-
-                }catch (Exception E){
-                    E.printStackTrace();
-                }
-            }
-        });
-
-        JButton btnPUS = new JButton("Pick up Service");
-        btnPUS.setBounds(30,390,200,30);
-        btnPUS.setBackground(Color.BLACK);
-        btnPUS.setForeground(Color.WHITE);
-        panel1.add(btnPUS);
-        btnPUS.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-
+                    new UpdateRoom();
                 }catch (Exception E){
                     E.printStackTrace();
                 }

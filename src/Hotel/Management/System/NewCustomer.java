@@ -17,10 +17,12 @@ public class NewCustomer extends JFrame implements ActionListener {
     NewCustomer(){
 
         JPanel panel = new JPanel();
-        panel.setBounds(5,5,840,540);
+        panel.setBounds(5,5,840,1000);
         panel.setLayout(null);
         panel.setBackground(new Color(3,45,48));
+        setUndecorated(true);
         add(panel);
+
 
         ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/customer.png"));
         Image image = imageIcon.getImage().getScaledInstance(200,200,Image.SCALE_DEFAULT);
