@@ -20,10 +20,10 @@ public class Reception extends JFrame {
         add(panel1);
 
         ImageIcon i111 = new ImageIcon(ClassLoader.getSystemResource("icon/hotell.gif"));
-        Image i22 = i111.getImage().getScaledInstance(800,800, Image.SCALE_DEFAULT);
+        Image i22 = i111.getImage().getScaledInstance(600,600, Image.SCALE_DEFAULT);
         ImageIcon imageIcon111 = new ImageIcon(i22);
         JLabel label11 = new JLabel(imageIcon111);
-        label11.setBounds(300,20,800,800);
+        label11.setBounds(280,10,800,800);
         panel.add(label11);
 
         ImageIcon i11 = new ImageIcon(ClassLoader.getSystemResource("icon/logo.gif"));

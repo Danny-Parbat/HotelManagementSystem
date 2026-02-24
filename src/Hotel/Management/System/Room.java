@@ -20,7 +20,8 @@ public class Room extends JFrame {
         panel.setLayout(null);
         add(panel);
 
-        ImageIcon imageIcon = new ImageIcon(ClassLoader.getSystemResource("icon/roomm.png"));
+
+        ImageIcon imageIcon = new ImageIcon("C:/Users/parba/IdeaProjects/JDBC test/src/icon/roomm.jpg");
         Image image = imageIcon.getImage().getScaledInstance(200,200,Image.SCALE_DEFAULT);
         ImageIcon imageIcon1 = new ImageIcon(image);
         JLabel label = new JLabel(imageIcon1);
